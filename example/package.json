@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example": "ts-node example.ts",
+    "update-elf-tokenlist": "npm install git+https://github.com/element-fi/elf-tokenlist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "elf-tokenlist": "git+https://github.com/element-fi/elf-tokenlist.git",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
