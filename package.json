@@ -1,10 +1,11 @@
 {
   "name": "@locklessfi/tokenlist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "dependencies": {
     "@uniswap/token-lists": "^1.0.0-beta.25",
-    "ntypescript": "^1.201706190042.1"
+    "@locklessfi/core-typechain": "^1.0.2",
+    "tsc": "^2.0.3"
   },
   "main": "dist/index.js",
   "files": [
@@ -24,7 +25,6 @@
     "@types/node": "^14.14.22",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
-    "lkl-contracts-typechain": "git+https://github.com/LocklessFinance/lkl-contracts-typechain.git",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "ethers": "^5.4.1",
@@ -51,6 +51,7 @@
     "_build-index": "bash scripts/build-index.sh",
     "build": " npm run _build-tokenlist-goerli && npm run _build-tokenlist-mainnet && npm run _build-index && npm run _copy-files",
     "_copy-files": "bash scripts/copy-dist-files.sh",
+    "_build-tokenlist": "bash scripts/build-tokenlist.sh mumbai",
     "build-mumbai": " bash scripts/build-tokenlist.sh mumbai && npm run _build-index && npm run _copy-files"
   }
 }

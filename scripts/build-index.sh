@@ -1,6 +1,6 @@
 MUMBAI_TOKENLIST=`cat dist/mumbai.tokenlist.json`
-MAINNET_TOKENLIST=`cat dist/mainnet.tokenlist.json`
-GOERLI_TOKENLIST=`cat dist/goerli.tokenlist.json`
+# MAINNET_TOKENLIST=`cat dist/mainnet.tokenlist.json`
+# GOERLI_TOKENLIST=`cat dist/goerli.tokenlist.json`
 
 echo "
 /** 
@@ -21,9 +21,7 @@ echo "
 import { TokenList } from '@uniswap/token-lists/src';
 export * from './tags';
 export * from './types';
-export const mainnetTokenList: TokenList = $MAINNET_TOKENLIST;
-export const goerliTokenList: TokenList = $GOERLI_TOKENLIST;
 export const mumbaiTokenList: TokenList = $MUMBAI_TOKENLIST;
 " > src/index.ts
 
-ntsc --project tsconfig.json
+tsc --project tsconfig.json

@@ -1,0 +1,22 @@
+{
+    "addresses": {
+        "balancerVaultAddress": "0x20DE048f3789bB5EFaAD6c4c6419DAA4A7698e38",
+        "convergentPoolFactoryAddress": "0xC0924F4198698fcAc10EFFEc53c386c929a240b2",
+        "trancheFactoryAddress": "0x66BcC3b00CCe2DF06ED16A7115A54720B86cD149",
+        "userProxyContractAddress": "0x0000000000000000000000000000000000000000",
+		"wethAddress":	"0x3C68CE8504087f89c640D02d133646d98e64ddd9",
+		"daiAddress": "0x001B3B4d0F3714Ca98ba10F6042DaEbF0B1B7b6F",
+		"usdtAddress":	"0xBD21A10F619BE90d6066c941b04e340841F1F989",
+		"wbtcAddress": "0x0d787a4a1548f673ed375445535a6c7A1EE56180",
+        "wmaticAddress": "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889",
+        "usdcAddress": "0x2058A9D7613eEE744279e3856Ef0eAda5FCbaA7e"
+
+    },
+    "chainId": 80001,
+    "safelist": [
+        "0x17d8073F80decE98f4d1F8c4BE455E1141118d29",
+        "0x17479e79AcE9E581ea881b3aBFB2EAd7f76815BF",
+        "0x6b92Ab7811A7B26A5D39682EA1c3CBC90A90F2cd",
+        "0xEC16d2F953F9331ed3f25cCa1b89ACCd93694931"
+    ]
+}

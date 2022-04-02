@@ -3,21 +3,7 @@ import { TokenInfo, TokenList } from "@uniswap/token-lists";
 export declare const mainnetTokenList: TokenList;
 export declare const goerliTokenList: TokenList;
 export declare const mumbaiTokenList: TokenList;
-export declare const TokenTag: {
-  VAULT: "vault";
-  ASSET_PROXY: "assetproxy";
-  CCPOOL: "ccpool";
-  PRINCIPAL: "P";
-  UNDERLYING: "underlying";
-  WPOOL: "wpool";
-  YIELD: "Y";
-};
-export declare type TokenTag = typeof TokenTag[keyof typeof TokenTag];
-
-export interface TagInfo {
-  name: string;
-  description: string;
-}
+export { TokenInfo, TokenList } from "@uniswap/token-lists/src";
 
 export interface PrincipalTokenInfo extends TokenInfo {
   extensions: {

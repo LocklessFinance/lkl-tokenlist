@@ -1,16 +1,16 @@
 name: Publish Package to npmjs
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      ALCHEMY_MAINNET_API_KEY: ${{ secrets.ALCHEMY_MAINNET_API_KEY }}
-      ALCHEMY_GOERLI_API_KEY: ${{ secrets.ALCHEMY_GOERLI_API_KEY }}
+      ALCHEMY_MUMBAI_API_KEY: ${{ secrets.ALCHEMY_MUMBAI_API_KEY }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -18,7 +18,7 @@ jobs:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - run: npm run build
+      - run: npm run build-mumbai
       - name: Upload build artifact
         uses: actions/upload-artifact@v2
         with:
